@@ -1,0 +1,37 @@
+;;;
+
+"title": "Saved"
+
+;;;
+
+
+
+
+%section
+	.container
+		.row
+			.col-12
+				.d-flex.justify-content-between.align-items-center.double-margin-bottom
+					%h5.bold-font.no-margin
+						Saved listings
+					.dropdown
+						%button.btn.btn-secondary.text-left{:type=>"button", "data-toggle" => "dropdown"}
+							Price 
+							%span.regular-font
+								$200K - 500K
+							%i.material-icons
+								keyboard_arrow_down
+						.dropdown-menu
+							%button.dropdown-item{:type=>"button"} 
+								$200K - 500K
+							%button.dropdown-item.active{:type=>"button"} 
+								$200K - 500K
+							%button.dropdown-item{:type=>"button"} 
+								$200K - 500K
+		.row
+			-10.times do
+				.col-lg-4.col-md-6.col-12
+					=partial"shared/house_thumb"
+
+				
+					

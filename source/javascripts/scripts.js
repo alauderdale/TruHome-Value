@@ -48,6 +48,7 @@ $('#myModal').on('hide.bs.modal', function (e) {
 //toggle mobile menu
   $('.menu-toggle-action').on('click', function(e) {
     $('#main-nav').toggleClass("menu-open"); 
+    $('body').toggleClass("menu-open-body"); 
   });
 
 

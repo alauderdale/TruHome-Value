@@ -27,7 +27,6 @@ body{
   background-color:$background-color;
   padding-top:$body-padding-height;
   @include breakpoint(md) {
-    padding-top:$baseline*3;
   }
 }
 
@@ -170,4 +169,9 @@ img{
     bottom:0px;
     left:8px;
   }
+}
+
+
+.rounded{
+  border-radius:$base-border-radius!important;
 }

@@ -1,0 +1,205 @@
+;;;
+
+"title": "Listing detail"
+
+;;;
+
+
+
+
+%section
+	.container
+		.row
+			.col-12
+				.d-flex.justify-content-between.align-items-center
+					
+					%a.align-middle{:href=>"/offers"}
+						%span.material-icons.align-middle.text-color
+							keyboard_backspace
+						%span.text-color
+							Back
+					.actions-contsiner
+						%button.btn.btn-flat.btn-icon.mr-2{:type => "button"}
+							%span.material-icons
+								favorite_border
+						.btn-group
+							%button.btn.btn-secondary{:type => "button"} 
+								Make offer
+							%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
+							.dropdown-menu
+								%a.dropdown-item{:href => "#"} 
+									Action
+								%a.dropdown-item{:href => "#"} 
+									Another action
+						
+
+%section.pt-0
+	.container
+		.row
+			.col-lg-7
+				%img.full-width.rounded.mb-3{:src=>"../images/tmp/house.png"}
+			.col-lg-5
+				%h3.bold-font.mb-3
+					$500,000
+				%p
+					%span.bold-font
+						4104 Sumter Sq 
+					Fort Collins, CO 80525
+				%p.body-small
+					4 bds 4 ba 3,180 sqft
+				%hr
+				%p.body-small
+					%span.bold-font
+						Offer status:
+					Accepting offers
+				.offer-status-indicator.mb-4
+					.step.active
+					.step
+					.step
+					.step
+				%hr
+				%p.body-small.light-text-color
+					Details
+				%dl.row.mb-0
+					%dt.col-sm-6.body-small
+						Accept offers deadline
+					%dd.col-sm-6.body-small
+						10/10/2021 at 5:00pm
+				%dl.row
+					%dt.col-sm-6.body-small
+						Last updated
+					%dd.col-sm-6.body-small
+						10/10/2021 at 5:00pm
+
+
+%section
+	.container
+		.row
+			.col-12
+				%p.bold-font.body-large.mb-0
+					All offers
+		.row
+			.col-12
+				.table-responsive.base-table.mt-4
+					%table.table.table-hover
+						%thead
+							%tr
+								%th.currently-sorted.sortable
+									Offer
+									%i.material-icons.sort
+										arrow_downward
+								%th.text-nowrap{:scope => "col"} 
+									My rating
+								%th.text-nowrap{:scope => "col"} 
+									Type
+								%th.text-nowrap{:scope => "col"} 
+									Last updated
+								%th.text-nowrap{:scope => "col"} 
+									ID
+								%th.text-nowrap{:scope => "col"} 
+									Apprasial shortfall
+								%th.text-nowrap{:scope => "col"} 
+									Earnest money
+								%th.text-nowrap{:scope => "col"} 
+									Lender letter
+								%th.text-nowrap{:scope => "col"} 
+									Price
+								%th.text-nowrap{:scope => "col"} 
+									Another col
+								
+								
+						%tbody
+							%tr.your-offer
+								%td.text-nowrap.bold-font
+									%span.table-actions-container
+										%span.action-text-container
+											$400,000
+										%span.action-container
+											.btn-group
+												%button.btn.btn-secondary.btn-sm{:type => "button"} 
+													Details
+												%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
+												.dropdown-menu
+													%a.dropdown-item{:href => "#"} 
+														Action
+													%a.dropdown-item{:href => "#"} 
+														Another action
+								
+												
+									
+								%td.text-nowrap
+									.star-rating
+										%span.material-icons.rating.rated
+											star
+										%span.material-icons.rating.rated
+											star
+										%span.material-icons.rating.rated
+											star
+										%span.material-icons.rating.rated
+											star
+										%span.material-icons.rating
+											star
+								%td.text-nowrap
+									Cash
+								%td.text-nowrap
+									Aug 12, 2021 8:00pm
+								%td.text-nowrap
+									00999888
+								%td.text-nowrap
+									$525,000
+								%td.text-nowrap
+									$525,000
+								%td.text-nowrap
+									Yes
+								%td.text-nowrap
+									$525,000
+								%td.text-nowrap
+									Data
+							-10.times do
+								%tr
+									%td.text-nowrap.bold-font
+										%span.table-actions-container
+											%span.action-text-container
+												$400,000
+											%span.action-container
+												.btn-group
+													%button.btn.btn-secondary.btn-sm{:type => "button"} 
+														Details
+													%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
+													.dropdown-menu
+														%a.dropdown-item{:href => "#"} 
+															Action
+														%a.dropdown-item{:href => "#"} 
+															Another action
+									
+													
+										
+									%td.text-nowrap
+										.star-rating
+											%span.material-icons.rating.rated
+												star
+											%span.material-icons.rating.rated
+												star
+											%span.material-icons.rating.rated
+												star
+											%span.material-icons.rating.rated
+												star
+											%span.material-icons.rating
+												star
+									%td.text-nowrap
+										Cash
+									%td.text-nowrap
+										Aug 12, 2021 8:00pm
+									%td.text-nowrap
+										00999888
+									%td.text-nowrap
+										$525,000
+									%td.text-nowrap
+										$525,000
+									%td.text-nowrap
+										Yes
+									%td.text-nowrap
+										$525,000
+									%td.text-nowrap
+										Data
+

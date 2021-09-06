@@ -1,0 +1,55 @@
+.offer-status-indicator{
+	display: flex;
+	.step{
+		width:25%;
+		height:6px;
+		background: $off-white-darker-color;
+		margin-right:8px;
+		border-radius:100px;
+		&.active{
+			background:$success-color;
+		}
+	}
+}
+
+
+.star-rating{
+	cursor: pointer;
+	color:$off-white-darker-color;
+	.material-icons{
+		font-size: 20px;
+	}
+	.rated{
+		color: $link-color
+	}
+	.rating{
+		&:hover{
+			color: $link-color;
+		}
+	}
+}
+
+tr.your-offer{
+	background:tint($primary-color,95%);
+	position:relative;
+	box-shadow: inset 2px 0px 0 $primary-color;
+	&:after{
+		content:"Your offer";
+		color:$primary-color;
+		background: black;
+		position: absolute;
+		left: 100px;
+		top: 16px;
+		padding: 4px 4px;
+		border-radius: 4px;
+    	font-size: 13px;
+    	line-height: 1;
+
+	}
+	&:hover{
+		background:tint($primary-color,95%)!important;
+		&:after{
+			display: none;
+		}
+	}
+}

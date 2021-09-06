@@ -1,0 +1,150 @@
+;;;
+
+"title": "Dashboard"
+
+;;;
+
+
+
+
+%section
+	.container
+		.row
+			.col-12
+				.d-flex.justify-content-between.align-items-center
+					%h5.bold-font.no-margin
+						My offers
+					%a.align-middle{:href=>"/offers"}
+						%span.text-color
+							View all
+						%span.material-icons.align-middle
+							arrow_right_alt
+				.double-margin-top
+					.table-responsive.base-table
+						%table.table.table-hover
+							%thead
+								%tr
+									%th{:scope => "col"} 
+										Address
+									%th.currently-sorted.sortable{:scope => "col"} 
+										Deadline
+										%i.material-icons.sort
+											arrow_downward
+									%th{:scope => "col"} 
+										My offer
+									%th{:scope => "col"} 
+										Highest offer
+									
+							%tbody
+								-4.times do
+									%tr
+										%td.text-nowrap.bold-font
+											%span.table-actions-container
+												%span.action-text-container
+													%a{:href=>"/browse/show"}
+														%img.mr-3{:src=>"../images/icon-offer.svg"}
+														%span
+															3049 Wells Fargo Dr, Fort Collins, CO 80521
+												%span.action-container
+													.btn-group
+														%button.btn.btn-secondary.btn-sm{:type => "button"} 
+															Details
+														%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
+														.dropdown-menu
+															%a.dropdown-item{:href => "#"} 
+																Action
+															%a.dropdown-item{:href => "#"} 
+																Another action
+														
+											
+										%td.text-nowrap
+											1 day 2 hours 50 min 
+										%td.text-nowrap
+											$500,000
+										%td.text-nowrap
+											$500,000
+		.row
+			.col-12
+				.double-padding-top
+				.double-padding-top
+				.d-flex.justify-content-between.align-items-center
+					%h5.bold-font.no-margin
+						My listings
+					%a.align-middle{:href=>"/listings"}
+						%span.text-color
+							View all
+						%span.material-icons.align-middle
+							arrow_right_alt
+				.double-margin-top
+					.table-responsive.base-table
+						%table.table.table-hover
+							%thead
+								%tr
+									%th{:scope => "col"} 
+										Address
+									%th.currently-sorted.sortable{:scope => "col"} 
+										Deadline
+										%i.material-icons.sort
+											arrow_downward
+									%th{:scope => "col"} 
+										Offers
+									
+									
+							%tbody
+								-4.times do
+									%tr
+										%td.text-nowrap.bold-font
+											%span.table-actions-container
+												%span.action-text-container
+													%a{:href=>"/browse/show"}
+														%img.mr-3{:src=>"../images/icon-listing.svg"}
+														%span
+															3049 Wells Fargo Dr, Fort Collins, CO 80521
+												%span.action-container
+													.btn-group
+														%button.btn.btn-secondary.btn-sm{:type => "button"} 
+															View
+														%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
+														.dropdown-menu
+															%a.dropdown-item{:href => "#"} 
+																Action
+															%a.dropdown-item{:href => "#"} 
+																Another action
+														
+											
+										%td.text-nowrap
+											=lorem.date
+										%td.text-nowrap
+											2
+										
+
+			
+											
+
+
+
+
+
+
+
+
+#archiveModal.modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-header
+				%h2.padding-left
+					Confirm archive project
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+
+			.modal-body
+				.padded.no-padding-top.no-padding-bottom
+					%p
+						Are you sure you want to continue? No one will be able to view notes in this project.
+			.modal-footer.no-border-top
+				%button.btn.btn-link{:tyle=>"button", "data-dismiss" => "modal"}
+					Cancel, don't archive
+				%button.btn.btn-primary{:tyle=>"button", "data-dismiss" => "modal"}
+					Yes, archive
+
+					

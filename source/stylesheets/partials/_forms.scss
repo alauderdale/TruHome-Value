@@ -1,18 +1,25 @@
 .simple-prepend{
   .input-group-prepend, .form-control, .input-group-text {
-    border:none;
     background-color:transparent;
+    border:none;
   }
   .input-group-text{
-    padding-left:0;
     padding-right:0;
-    color:$light-gray-color;
+    padding-left:0;
+    border:none;
   }
+  .form-control{
+  }
+}
+
+label{
+  font-size:$base-font-size;
 }
 
 
 .form-control{
   border-radius: $base-border-radius;
+  border-color:$border-color;
 	&.form-control-lg{
 		font-size:16px;
 		padding-top:.65rem;

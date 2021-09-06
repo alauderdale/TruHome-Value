@@ -1,7 +1,7 @@
 // typography baselines and @font face setups
 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900');
 
 //text transforms
 
@@ -109,35 +109,46 @@
 //font base
 
 h1{
-  font-size:30px;
-  line-height:38px;
+  font-size:80px;
+  line-height:96px;
 }
 
 h2{
-  font-size:24px;
-  line-height:31px;
+  font-size:40px;
+  line-height:48px;
 }
 
 h3{
-  font-size:17px;
-  line-height:22px;
+  font-size:36px;
+  line-height:40px;
 }
 
 h4{
-  font-size:14px;
-  line-height:18px;
+  font-size:32px;
+  line-height:40px;
 }
 
 h5{
-  font-size:13px;
-  line-height:15px;
+  font-size:24px;
+  line-height:32px;
 }
 
 h6{
-  font-size:10px;
-  line-height:12px;
+  font-size:12px;
+  line-height:16px;
 }
 
+
+
+
+.body-small{
+  font-size: 14px;
+  line-height:20px;
+}
+.body-large{
+  font-size: 20px;
+  line-height:28px;
+}
 
 //lists
 
@@ -202,7 +213,15 @@ ul.icon-list-better{
 
 //truncate
 
-
+.truncate-text{
+  webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+    width: 100%!important;
+}
 
 
 //mobile

@@ -1,5 +1,25 @@
 %section
-	.container.product-card-container
+	.container
+		.row
+			.col
+				%h1.bold-font
+					Heading 1
+				%h2
+					Heading 2
+				%h3
+					Heading 3
+				%h4
+					Heading 4
+				%h5
+					Heading 5
+				%h6
+					Heading 6
+				%p.body-large
+					=lorem.paragraphs(3)
+				%p
+					=lorem.paragraphs(3)
+				%p.body-small
+					=lorem.paragraphs(3)
 		.row
 			.col
 				%h2
@@ -15,8 +35,6 @@
 						settings
 				%a.btn.btn-terciary{:href=>"#"}
 					Terciary button
-				%a.btn.btn-label{:href=>"#"}
-					Label button
 				%a.btn.btn-flat{:href=>"#"}
 					Flat button
 				%span.d-block{:style=>"padding:10px; background:black;"}
@@ -59,10 +77,6 @@
 							%i.material-icons.icon-left
 								disabled_by_default
 							Cancelled
-		.row
-			.col
-				%h2
-					Menus
 
 
 							

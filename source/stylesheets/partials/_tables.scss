@@ -23,3 +23,79 @@
 	}
 
 }
+
+
+.base-table{
+	border:1px solid $border-color;
+	table{
+		margin:0;
+		font-size: 14px;
+		.table-actions-container{
+			display: flex;
+			align-items:baseline;
+			.action-text-container{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.action-container{
+				opacity: 0;
+				margin-left:10px;
+			}
+		}
+		tr{
+			&:hover{
+
+					.action-text-container{
+						max-width:200px;
+					}
+					.action-container{
+						opacity: 1;
+					}
+
+			}
+		}
+		th, tr{
+			border-bottom:1px solid $border-color;
+		}
+		th{
+			color: $light-text-color;
+			background:$off-white-dark-color;
+			border-top:none;
+			border-right:1px solid $border-color;
+			&:last-of-type{
+				border-right:none;
+			}
+			&.sortable{
+				cursor: pointer;
+				&.currently-sorted{
+					color: $text-color;
+				}
+			}
+			i.sort{
+				position: relative;
+				top: 3px;
+				font-size: 13px;
+				}
+			
+		}
+		tr{
+			&:last-of-type{
+				border-bottom:none;
+			}
+		}
+		td,th{
+			vertical-align: middle;
+			position:relative;
+		}
+		&.table-hover{
+			tr{
+				&:hover{
+					background:$off-white-dark-color;
+				}
+			}
+		}
+	}
+
+}
+

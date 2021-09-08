@@ -1,0 +1,12 @@
+%nav.navbar.fixed-top.border-bottom
+	.container-fluid
+		.d-flex.pt-1.pb-1.justify-content-between.full-width.align-items-center
+			.group
+				%a.d-inline-block.mr-4{:href => "/dashboard"} 
+					%img{:src=>"/images/logo-icon.svg", :width=>"40px", :style=>"position:relative; top:-3px;"}
+				%h5.no-margin-bottom.d-inline-block.bold-font
+					=current_page.data.title
+			.group
+				%a.btn.btn-flat.btn-icon{:href=>"/dashboard"}
+					%span.material-icons
+						close

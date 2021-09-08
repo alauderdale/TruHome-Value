@@ -33,6 +33,7 @@ tr.your-offer{
 	background:tint($primary-color,95%);
 	position:relative;
 	box-shadow: inset 2px 0px 0 $primary-color;
+	position:relative;
 	&:after{
 		content:"Your offer";
 		color:$primary-color;

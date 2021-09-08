@@ -11,7 +11,35 @@
 	.container
 		.row
 			.col-12
-				.d-flex.justify-content-between.align-items-center
+				.d-flex.justify-content-between.align-items-center.double-margin-bottom
 					%h5.bold-font.no-margin
 						Browse listings
+					.dropdown
+						%button.btn.btn-secondary.text-left{:type=>"button", "data-toggle" => "dropdown"}
+							Price 
+							%span.regular-font
+								$200K - 500K
+							%i.material-icons
+								keyboard_arrow_down
+						.dropdown-menu.dropdown-menu-right.no-padding{:style=>"width:300px;"}
+							.padded
+								%p.body-small.bold-font
+									Price range
+								.d-flex.flex-row.align-items-center
+									.item
+										%input.form-control{:type=>"text", :value=>"$100,000"}
+									.item.mr-2.ml-2
+										\-
+									.item
+										%input.form-control{:type=>"text", :value=>"$500,000"}
+								.mt-4.d-flex.justify-content-end
+									%button.btn.btn-primary.btn-sm{:type=>"button"}
+										Done
+
+		.row
+			-10.times do
+				.col-lg-4.col-md-6.col-12
+					=partial"shared/house_thumb"
+
+				
 					

@@ -11,13 +11,21 @@ $top-menu-height:80px;
 	@include breakpoint(md) {
 		left:0;
 	}
+	@include breakpoint(sm) {
+		padding:4px 0px;
+		.btn{
+			padding:4px 10px;
+			font-weight: 14px;
+		}
+	}
 
 	//menu button shown on mobile
 	.menu-toggle{
 		padding:10px;
+		border-radius:100px;
 		.material-icons{
 			line-height:24px;
-			font-size: 24px;
+			font-size: 22px;
 		}
 	}
 
@@ -35,7 +43,7 @@ $top-menu-height:80px;
 	
 	padding:8px;
 	border-radius:100px;
-	border:2px solid shade($border-color,20%);
+	border:1px solid shade($border-color,20%);
 	margin: 0;
 	color:$text-color;
 	line-height: 1;
@@ -51,8 +59,8 @@ $top-menu-height:80px;
 .menu-close{
 	//this positions the close button in the top right of any element
 	position: absolute;
-    top: 5px;
-    right: -15px;
+    top: 27px;
+    right: 13px;
     background: white;
     display: none;
 }
@@ -91,6 +99,12 @@ $top-menu-height:80px;
 		}
 		@include breakpoint(md) {
 			left:0!important;
+			width:240px;
+			.logo-container{
+				img{
+					margin-left:30px;
+				}
+			}
 		}
 	}
 	transition-duration: .2s;
@@ -120,10 +134,24 @@ $top-menu-height:80px;
 			display: block;
 			width:100%;
 			font-size: 14px;
+			font-weight: 700;
+			position:relative;
 			&.active{
 				font-weight: 900;
-				box-shadow:inset 4px 0 0 $primary-color;
+				// box-shadow:inset 4px 0 0 $primary-color;
 				color:$text-color!important;
+				&:before{
+					content: "";
+					width:6px;
+					left:0;
+					top:0;
+					bottom:0;
+					height:100%;
+					background:$primary-color;
+					position:absolute;
+					border-top-right-radius:6px;
+					border-bottom-right-radius:6px;
+				}
 			}
 		}
 	}

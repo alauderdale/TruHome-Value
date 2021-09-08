@@ -7,12 +7,13 @@
 	color:$text-color;
 	&:hover{
 		color:$text-color;
-		border-color:$link-color;
+		box-shadow: $box-shadow-card;
+		border-color:shade($border-color,10%);
 	}
 	background: #FFFFFF;
-	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
 	border-radius: 13px;
 	overflow: hidden;
+	transition-duration: .4s;
 	.card-body{
 		padding:20px;
 	}

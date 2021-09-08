@@ -18,12 +18,12 @@
 							keyboard_backspace
 						%span.text-color
 							Back
-					.actions-contsiner
+					.actions-container
 						%button.btn.btn-flat.btn-icon.mr-2{:type => "button"}
 							%span.material-icons
 								favorite_border
 						.btn-group
-							%button.btn.btn-secondary{:type => "button"} 
+							%a.btn.btn-secondary{:href => "/offers/new"} 
 								Make offer
 							%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
 							.dropdown-menu
@@ -39,8 +39,11 @@
 			.col-lg-7
 				%img.full-width.rounded.mb-3{:src=>"../images/tmp/house.png"}
 			.col-lg-5
-				%h3.bold-font.mb-3
-					$500,000
+				.mb-3
+					%h3.bold-font.d-inline-block.align-middle.mr-3
+						$500,000
+					%span.badge.badge-light.align-middle
+						Starting price
 				%p
 					%span.bold-font
 						4104 Sumter Sq 
@@ -116,7 +119,7 @@
 											$400,000
 										%span.action-container
 											.btn-group
-												%button.btn.btn-secondary.btn-sm{:type => "button"} 
+												%button.btn.btn-secondary.btn-sm{:type => "button", :onclick=>"location.href='/offers/show'"} 
 													Details
 												%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
 												.dropdown-menu
@@ -163,7 +166,7 @@
 												$400,000
 											%span.action-container
 												.btn-group
-													%button.btn.btn-secondary.btn-sm{:type => "button"} 
+													%button.btn.btn-secondary.btn-sm{:type => "button", :onclick=>"location.href='/offers/show'"} 
 														Details
 													%button.btn.btn-secondary.btn-sm.dropdown-toggle.dropdown-toggle-split{ "data-toggle" => "dropdown", :type => "button"}
 													.dropdown-menu

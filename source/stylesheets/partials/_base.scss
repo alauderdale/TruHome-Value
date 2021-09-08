@@ -28,6 +28,10 @@ body{
   padding-top:$body-padding-height;
   @include breakpoint(md) {
   }
+  @include breakpoint(sm) {
+    padding-top:60px;
+  }
+
 }
 
 .flex{
@@ -127,7 +131,7 @@ img{
 //borders
 
 .border-top, .border-bottom, .border-left, .border-right{
-  border-color:$border-color;
+  border-color:$border-color!important;
 }
 
 //attachments cards

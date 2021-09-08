@@ -13,17 +13,18 @@
 		.form-content-wrapper
 			.form-content
 				%img.double-margin-bottom{:src=>"/images/logo.svg",  :width=>"120px"}
-				%h2
-					Welcome back to Volley
-				%p.light-text-color
-					The world’s first design QA platform
+				.mb-4
+					%p.body-large.bold-font.no-margin-bottom
+						Welcome back
+					%p.light-text-color
+						Tagline for the product here
 				%form
 					.margin-bottom
-						%h4.bold-font
+						%label
 							Email
 						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"John@doe.com"}
 					.margin-bottom
-						%h4.bold-font
+						%label
 							Password
 						%input.form-control.form-control-lg{:type=>"text"}
 					.margin-bottom
@@ -31,7 +32,7 @@
 							%a.light-text-color{:href=>"/welcome/forgot-password"}
 								Forgot password?
 					.double-margin-top
-						%a.btn.btn-primary.btn-lg.btn-block{:href=>"/products/zero"}
+						%a.btn.btn-primary.btn-lg.btn-block{:href=>"/dashboard"}
 							Log in
 				.double-margin-top
 					%p

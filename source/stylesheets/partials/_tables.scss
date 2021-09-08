@@ -27,9 +27,10 @@
 
 .base-table{
 	border:1px solid $border-color;
+	box-shadow: $box-shadow-card;
 	table{
 		margin:0;
-		font-size: 14px;
+		font-size: 13px;
 		.table-actions-container{
 			display: flex;
 			align-items:baseline;
@@ -63,6 +64,9 @@
 			background:$off-white-dark-color;
 			border-top:none;
 			border-right:1px solid $border-color;
+			text-transform: uppercase;
+			font-size: 11px;
+			letter-spacing: .5px;
 			&:last-of-type{
 				border-right:none;
 			}

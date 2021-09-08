@@ -34,7 +34,8 @@ tr.your-offer{
 	position:relative;
 	box-shadow: inset 2px 0px 0 $primary-color;
 	position:relative;
-	&:after{
+	td:first-of-type{
+			&:after{
 		content:"Your offer";
 		color:$primary-color;
 		background: black;
@@ -45,12 +46,17 @@ tr.your-offer{
 		border-radius: 4px;
     	font-size: 13px;
     	line-height: 1;
+    	display: block;
 
 	}
+	}
+
 	&:hover{
 		background:tint($primary-color,95%)!important;
-		&:after{
-			display: none;
+		td:first-of-type{
+			&:after{
+				display: none;
+			}
 		}
 	}
 }

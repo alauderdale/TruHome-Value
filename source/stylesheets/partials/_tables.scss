@@ -27,7 +27,6 @@
 
 .base-table{
 	border:1px solid $border-color;
-	box-shadow: $box-shadow-card;
 	table{
 		margin:0;
 		font-size: 13px;
@@ -45,6 +44,7 @@
 			}
 		}
 		tr{
+			position:relative;
 			&:hover{
 
 					.action-text-container{

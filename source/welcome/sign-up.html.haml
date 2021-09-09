@@ -12,7 +12,7 @@
 					close
 		.form-content-wrapper
 			.form-content
-				%img.double-margin-bottom{:src=>"/images/logo.svg",  :width=>"200px"}
+				%img.double-margin-bottom.login-logo{:src=>"/images/logo.svg"}
 				.mb-4
 					%p.body-large.bold-font.no-margin-bottom
 						Get started now
@@ -22,15 +22,15 @@
 					.margin-bottom
 						%label
 							Name
-						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"John Doe"}
+						%input.form-control{:type=>"text", :placeholder=>"John Doe"}
 					.margin-bottom
 						%label
 							Email
-						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"john@doe.com"}
+						%input.form-control{:type=>"text", :placeholder=>"john@doe.com"}
 					.margin-bottom
 						%label
 							Password
-						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"Min 6 chars."}
+						%input.form-control{:type=>"text", :placeholder=>"Min 6 chars."}
 					%p.body-small.light-text-color
 						I agree to the
 						%a.light-text-color{:href=>"/welcome/login"}

@@ -1,22 +1,42 @@
 .card{
 	border-color:$border-color;
+	.card-body{
+		padding:24px;
+	}
 }
 
 
 .preview-card{
 	color:$text-color;
-	&:hover{
-		color:$text-color;
-		box-shadow: $box-shadow-card;
-	}
+	position: relative;
 	background: #FFFFFF;
 	border-radius: 13px;
 	overflow: hidden;
 	transition-duration: .4s;
+	&:hover{
+		color:$text-color;
+		box-shadow: $box-shadow-card;
+	}
 	.card-body{
-		padding:20px;
+		padding:24px;
 	}
 	.card-img-top{
 
+	}
+	.favorite-button{
+		color: rgba(255,255,255,.8);
+		position:absolute;
+		top:15px;
+		right:15px;
+		border:none;
+		padding:0;
+		&:hover{
+			background:transparent;
+			color: white;
+
+		}
+		.material-icons{
+			font-size: 30px;
+		}
 	}
 }

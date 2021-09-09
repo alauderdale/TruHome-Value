@@ -1,6 +1,11 @@
 $menu-width:200px;
 $top-menu-height:80px;
 
+
+.default-header{
+	background:white;
+}
+
 .top-header{
 	z-index: 700;
 	width:calc(100%-$menu-width);
@@ -128,7 +133,7 @@ $top-menu-height:80px;
 		align-items: start;
 		padding:0;
 		.nav-link{
-			padding:4px 30px;
+			padding:8px 30px;
 			margin:4px 0!important;
 			margin:0;
 			display: block;

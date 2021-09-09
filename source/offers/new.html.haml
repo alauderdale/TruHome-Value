@@ -1,9 +1,116 @@
 ;;;
 
-"title": "New Offer",
+"title": "Make an offer",
 "layout": "full-page-modal"
 
 ;;;
 
 
+%section
+	.container
+		.row.justify-content-center
+			.col-12.col-lg-8
+				.card
+					.card-body
+						.form-group.mb-4
+							=partial"shared/house_preview"
+						.form-group
+							%label
+								Contract
+							%button.btn.btn-secondary.d-block{:type=>"button"}
+								Upload file
+						.mt-3
+							%p.bold-font
+								Offer details
+						.form-group
+							%label
+								Buyer name
+							%input.form-control{:type=>"text", :placeholder=>"John Doe"}
+						.form-group
+							%label
+								Offer ammount
+							.input-group
+								.input-group-prepend
+									%span.material-icons.input-group-text
+										attach_money
+								%input.form-control{:type=>"text", :placeholder=>"0.00"}
+						.form-group
+							%label
+								Appraisal Shortfall
+							.input-group
+								.input-group-prepend
+									%span.material-icons.input-group-text
+										attach_money
+								%input.form-control{:type=>"text", :placeholder=>"0.00"}
+						.form-group.form-check
+							%input#ShortfallCheck.form-check-input{:type => "checkbox"}
+							%label.form-check-label{:for => "ShortfallCheck"} 
+								Shortfall covered
+						.form-group
+							%label
+								Earnest money
+							.input-group
+								.input-group-prepend
+									%span.material-icons.input-group-text
+										attach_money
+								%input.form-control{:type=>"text", :placeholder=>"0.00"}
+						.form-group
+							%label
+								Term limit
+							.input-group
+								%input.form-control{:type=>"text", :placeholder=>"0.00"}
+								.input-group-append
+									%span.input-group-text
+										Days
+						.form-group
+							%label
+								Daily rent
+							.input-group
+								.input-group-prepend
+									%span.material-icons.input-group-text
+										attach_money
+								%input.form-control{:type=>"text", :placeholder=>"0.00"}
+						.form-group
+							%label
+								PCDA
+							.form-check
+								%input#exampleRadios1.form-check-input{ :name => "exampleRadios", :type => "radio", :value => "option1"}
+								%label.form-check-label{:for => "exampleRadios1"}
+									No
+							.form-check
+								%input#exampleRadios2.form-check-input{:checked => "checked", :name => "exampleRadios", :type => "radio", :value => "option2"}
+								%label.form-check-label{:for => "exampleRadios2"}
+									Yes with terms
+						.form-group
+							%label
+								Finance type
+							%select.form-control
+								%option
+									Select an option
+								%option
+									Option 1
+								%option
+									Option 2
+						.form-group
+							%label
+								Proof of funds
+							%button.btn.btn-secondary.d-block{:type=>"button"}
+								Upload file
+						.mt-3
+							%p.bold-font
+								Deadlines
+						-4.times do
+							.form-group
+								%label
+									Offer starts
+								%input.form-control{:type=>"text", :placeholder=>"DD/MM/YYYY"}
+									
+
+						.d-flex.mt-5.justify-content-end
+							%a.btn.btn-flat{:href=>"#"}
+								Cancel
+							%a.btn.btn-primary{:href=>"#"}
+								Submit offer
+
+						
 

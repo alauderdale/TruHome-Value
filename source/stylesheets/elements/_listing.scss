@@ -1,3 +1,64 @@
+
+.map-container{
+	width:40%;
+	position:relative;
+	.map-inner{
+		.map{
+			position:fixed;
+			width:calc(40% - 80px);
+			height:calc(100% - 87px);
+			background:$light-gray-color;
+			iframe.map-component{
+				//placeholder remove
+				height: 100%;
+				position: absolute;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				left:0;
+			}
+		}
+	}
+	@include breakpoint(md) {
+		display: none;
+	}
+}
+
+.listings-container{
+	width:60%;
+	position:relative;
+	
+	@include breakpoint(md) {
+		width: 100%;
+	}
+	.listings-list-container{
+		padding-top:80px;
+		@include breakpoint(md) {
+			padding-top:0px;
+		}
+	}
+}
+
+.listings-filters{
+	position:fixed;
+	padding:15px 0px;
+	width:calc(60% - 130px);
+	z-index: 99;
+	background:white;
+	@include breakpoint(md) {
+		position:initial;
+		width:100%;
+	}
+	.listings-filters-inner{
+		
+	}
+}
+
+
+
+
+
+
 .offer-status-indicator{
 	display: flex;
 	.step{
@@ -59,4 +120,10 @@ tr.your-offer{
 			}
 		}
 	}
+}
+
+
+form.listings-search{
+
+
 }

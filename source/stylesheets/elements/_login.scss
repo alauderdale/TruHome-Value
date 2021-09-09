@@ -4,8 +4,10 @@
 	left:0;
 	width:100%;
 	height:100%;
-	background: $primary-color url("/images/marketing/pattern.svg");
-
+	background-image: linear-gradient(56deg, #FCDF1E 0%, #F4B829 95%);
+	.login-logo{
+		width:150px;
+	}
 	.form-container{
 		padding:0 $baseline*4;
 		position: absolute;

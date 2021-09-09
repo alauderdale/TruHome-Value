@@ -8,13 +8,18 @@
     padding-left:0;
     border:none;
   }
-  .form-control{
-  }
 }
+
+
+.input-group-prepend, .form-control, .input-group-text{
+  background:white;
+  border-color:$border-color;
+}
+
 
 label{
   font-size:14px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0.2rem;
 }
 
@@ -22,6 +27,7 @@ label{
 .form-control{
   border-radius: $base-border-radius;
   border-color:$border-color;
+  height: calc(1.5em + .75rem + 7px);
 	&.form-control-lg{
 		font-size:16px;
 		padding-top:.65rem;
@@ -317,4 +323,21 @@ input:checked + .slider:before {
       background:$light-gray-color;
     }
   }
+}
+
+
+/// icons in forms
+
+form.search-form{
+  position:relative;
+  input{
+    padding-left:35px;
+  }
+  .search-icon{
+    position:absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 20px;
+  }
+  
 }

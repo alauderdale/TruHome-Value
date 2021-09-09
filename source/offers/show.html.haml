@@ -31,22 +31,8 @@
 									Action
 								%a.dropdown-item{:href => "#"} 
 									Another action
-				.card.mt-4
-					.card-body
-						.row
-							.col-md-4
-								%img.rounded.full-width.mb-3.mb-md-0{:src=>"../images/tmp/house.png"}
-							.col-md-8
-								%p
-									%span.bold-font
-										4104 Sumter Sq 
-									%br
-									Fort Collins, CO 80525
-								%p.body-small.no-margin-bottom
-									4 bds 4 ba 3,180 sqft
-									%br
-									Additional info
-
+				.mt-4
+					=partial"shared/house_preview"
 				.card.mt-4
 					.card-body
 						.mb-4

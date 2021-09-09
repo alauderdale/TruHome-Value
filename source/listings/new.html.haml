@@ -6,4 +6,39 @@
 ;;;
 
 
+%section
+	.container
+		.row.justify-content-center
+			.col-12.col-lg-7
+				.card
+					.card-body
+						.form-group.mb-4
+							%label
+								Address or MLS
+							%input.form-control{:type=>"text", :placeholder=>"Search for an address"}
+							%h6.mt-1.light-text-color
+								Enter the USPS-validated address. You won’t be able to edit the address once you create the listing.
+						.form-group.mb-4
+							=partial"shared/house_preview"
+						%p.bold-font
+							Deadlines
+						-4.times do
+							.form-group
+								%label
+									Offer starts
+								.form-row
+									.col
+										%input.form-control{:type=>"text", :placeholder=>"DD/MM/YYYY"}
+									.col
+										%input.form-control{:type=>"text", :placeholder=>"2:00pm"}
+						%p.body-small.light-text-colot
+							By clicking “Submit listing” I agree to 
+							%a{:href=>"#"}
+								Terms and Conditions
+						.d-flex.mt-5.justify-content-end
+							%a.btn.btn-flat{:href=>"#"}
+								Cancel
+							%a.btn.btn-primary{:href=>"#"}
+								Create listing
 
+						

@@ -12,7 +12,7 @@
 					close
 		.form-content-wrapper
 			.form-content
-				%img.double-margin-bottom{:src=>"/images/logo.svg",  :width=>"200px"}
+				%img.double-margin-bottom.login-logo{:src=>"/images/logo.svg"}
 				.mb-4
 					%p.body-large.bold-font.no-margin-bottom
 						Welcome back
@@ -22,11 +22,11 @@
 					.margin-bottom
 						%label
 							Email
-						%input.form-control.form-control-lg{:type=>"text", :placeholder=>"John@doe.com"}
+						%input.form-control{:type=>"text", :placeholder=>"John@doe.com"}
 					.margin-bottom
 						%label
 							Password
-						%input.form-control.form-control-lg{:type=>"text"}
+						%input.form-control{:type=>"text"}
 					.margin-bottom
 						%p.no-margin-bpttpm
 							%a.light-text-color{:href=>"/welcome/forgot-password"}

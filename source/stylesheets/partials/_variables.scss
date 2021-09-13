@@ -1,7 +1,7 @@
 // color vars
 
-$primary-color: #FFDA00;
-$secondary-color: #0B2A5C;
+$primary-color: #FEBE10;
+$secondary-color: #FFE100;
 $tertiary-color: #26C164;
 
 //accents
@@ -31,7 +31,7 @@ $light-gray-color: #B4BBC6;
 $gray-color: #6F767D;
 
 //Text color
-$dark-gray-color: #222325;
+$dark-gray-color: #231F20;
 
 //Dark text color
 $darker-gray-color: #393C3E;
@@ -40,7 +40,7 @@ $darker-gray-color: #393C3E;
 //links
 
 $link-color: #009FB7;
-$link-hover-color:shade($secondary-color, 50%);
+$link-hover-color:shade($link-color, 50%);
 
 
 // alerts

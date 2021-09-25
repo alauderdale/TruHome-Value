@@ -4,7 +4,9 @@ $bg-accent-light-color: #FCFBF8;
 
 body.marketing{
 	padding-top:96px!important;
-
+	@include breakpoint(md) {
+		padding-top:76px!important;
+	}
 
 	section{
 	  padding:$baseline*5 0;
@@ -78,6 +80,9 @@ body.marketing{
 .marketing-header{
 	border-bottom:1px solid $border-color!important;
 	padding:20px 20px;
+	@include breakpoint(md) {
+		padding:10px 20px;
+	}
 	.nav-item{
 		@include breakpoint(md) {
 			border-bottom:1px solid $border-color;
@@ -176,5 +181,6 @@ body.marketing{
 
 .marketing-footer{
 	padding:$baseline*4 0;
+	border-top:1px solid $border-color;
 }
 

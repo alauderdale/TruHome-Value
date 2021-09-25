@@ -1527,6 +1527,9 @@ form.search-form {
 
 body.marketing {
   padding-top: 96px !important; }
+  @media (max-width: 992px) {
+    body.marketing {
+      padding-top: 76px !important; } }
   body.marketing section {
     padding: 80px 0; }
     @media (max-width: 992px) {
@@ -1574,6 +1577,9 @@ body.marketing {
 .marketing-header {
   border-bottom: 1px solid #E6ECF1 !important;
   padding: 20px 20px; }
+  @media (max-width: 992px) {
+    .marketing-header {
+      padding: 10px 20px; } }
   @media (max-width: 992px) {
     .marketing-header .nav-item {
       border-bottom: 1px solid #E6ECF1; } }
@@ -1642,7 +1648,8 @@ body.marketing {
   background-size: cover; }
 
 .marketing-footer {
-  padding: 64px 0; }
+  padding: 64px 0;
+  border-top: 1px solid #E6ECF1; }
 
 @keyframes menu-zoom {
   0% {

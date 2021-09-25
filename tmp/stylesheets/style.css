@@ -9,7 +9,7 @@
   .text-center-sm {
     text-align: center !important; } }
 
-section.inverse-section h1, section.inverse-section h2, section.inverse-section h3, section.inverse-section h4, section.inverse-section h5, section.inverse-section h6, section.inverse-section p, section.inverse-section small, section.inverse-section li {
+section.inverse-section h1, body.marketing section.inverse-section h1, section.inverse-section h2, body.marketing section.inverse-section h2, section.inverse-section h3, body.marketing section.inverse-section h3, section.inverse-section h4, body.marketing section.inverse-section h4, section.inverse-section h5, body.marketing section.inverse-section h5, section.inverse-section h6, body.marketing section.inverse-section h6, section.inverse-section p, body.marketing section.inverse-section p, section.inverse-section small, body.marketing section.inverse-section small, section.inverse-section li, body.marketing section.inverse-section li {
   color: white !important; }
 
 * {
@@ -200,8 +200,8 @@ img {
   font-size: 0.7rem; }
 
 h1 {
-  font-size: 80px;
-  line-height: 96px; }
+  font-size: 61px;
+  line-height: 64px; }
 
 h2 {
   font-size: 40px;
@@ -1524,6 +1524,125 @@ form.search-form {
           position: absolute;
           border-top-right-radius: 6px;
           border-bottom-right-radius: 6px; }
+
+body.marketing {
+  padding-top: 96px !important; }
+  body.marketing section {
+    padding: 80px 0; }
+    @media (max-width: 992px) {
+      body.marketing section {
+        padding: 48px 0; } }
+    body.marketing section.inverse-section {
+      background-color: black; }
+    body.marketing section.off-white-bg {
+      background: #FCFBF8; }
+  body.marketing .btn-primary {
+    background: #FEBE10 !important;
+    border: none;
+    color: #231F20;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 16px 40px !important; }
+    body.marketing .btn-primary:hover {
+      color: #231F20;
+      background: #fec528 !important; }
+  @media (max-width: 992px) {
+    body.marketing h1 {
+      font-size: 2.5em;
+      line-height: 1.2em; } }
+  @media (max-width: 992px) {
+    body.marketing h2 {
+      font-size: 2em;
+      line-height: 1.2em; } }
+  @media (max-width: 992px) {
+    body.marketing h3 {
+      font-size: 1.8em;
+      line-height: 1.2em; } }
+  @media (max-width: 992px) {
+    body.marketing h4 {
+      font-size: 1.5em;
+      line-height: 1.2em; } }
+  @media (max-width: 992px) {
+    body.marketing h5 {
+      font-size: 1.3em;
+      line-height: 1.2em; } }
+  @media (max-width: 992px) {
+    body.marketing p.body-large {
+      font-size: 1.2em;
+      line-height: 1.4em; } }
+
+.marketing-header {
+  border-bottom: 1px solid #E6ECF1 !important;
+  padding: 20px 20px; }
+  @media (max-width: 992px) {
+    .marketing-header .nav-item {
+      border-bottom: 1px solid #E6ECF1; } }
+  .marketing-header a.nav-link {
+    color: #231F20 !important;
+    font-weight: 600;
+    padding: 5px 16px !important; }
+    .marketing-header a.nav-link:hover {
+      color: #FEBE10 !important; }
+    @media (max-width: 992px) {
+      .marketing-header a.nav-link {
+        padding: 16px 0 !important;
+        font-size: 20px !important;
+        width: 100%; } }
+  .marketing-header a.nav-link, .marketing-header .btn {
+    font-size: 16px; }
+  @media (max-width: 992px) {
+    .marketing-header .sign-up-btn {
+      width: 100%;
+      margin-top: 30px !important; } }
+  .marketing-header .navbar-brand {
+    margin-right: 40px;
+    position: relative;
+    top: -7px; }
+  @media (max-width: 992px) {
+    .marketing-header .dropdown-menu {
+      box-shadow: none; } }
+  @media (max-width: 992px) {
+    .marketing-header .dropdown-menu .dropdown-item {
+      font-size: 18px;
+      font-weight: 400;
+      padding: 10px 0; }
+      .marketing-header .dropdown-menu .dropdown-item:hover {
+        background: none;
+        color: #FEBE10 !important; } }
+  @media (max-width: 992px) {
+    .marketing-header .form-inline {
+      display: block; } }
+
+.accordion-default .card {
+  background: none;
+  border: none;
+  border-bottom: #D0CDC7 1px solid !important;
+  cursor: pointer; }
+  .accordion-default .card .card-header, .accordion-default .card .card-body {
+    padding: 1rem 0; }
+  .accordion-default .card .card-header {
+    border-radius: 0px;
+    border: none;
+    padding-right: 60px;
+    background: transparent;
+    position: relative; }
+    .accordion-default .card .card-header.collapsed:after {
+      transform: scaleY(-1); }
+    .accordion-default .card .card-header:after {
+      content: '';
+      width: 32px;
+      height: 16px;
+      background-image: url("../images/marketing/chevron.svg");
+      position: absolute;
+      right: 0;
+      top: calc(50% - 8px); }
+
+.house-bg-1 {
+  background-image: url("../images/marketing/house-bg-1.png");
+  background-size: cover; }
+
+.marketing-footer {
+  padding: 64px 0; }
 
 @keyframes menu-zoom {
   0% {

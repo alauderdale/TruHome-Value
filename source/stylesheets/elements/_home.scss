@@ -1,7 +1,180 @@
-.marketing{
+$bg-accent-light-color: #FCFBF8;
+
+
+
+body.marketing{
+	padding-top:96px!important;
+
+
+	section{
+	  padding:$baseline*5 0;
+	  @include breakpoint(md) {
+	  	padding:$baseline*3 0;
+	  }
+	  &.inverse-section{
+	  	background-color:black;
+	  	@extend %white_text;
+	  }
+	  &.off-white-bg{
+	  	background:$bg-accent-light-color;
+	  }
+
+	}
+
+
+	.btn-primary{
+		background:$primary-color!important;
+		border:none;
+		color:$text-color;
+		font-size: 20px;
+		font-weight: 800;
+		padding:16px 40px!important;
+		&:hover{
+			color:$text-color;
+			background:tint($primary-color,10%)!important;
+		}
+	}
+
+
+	h1{
+		@include breakpoint(md) {
+			font-size: 2.5em;
+			line-height: 1.2em;
+		}
+	}
+	h2{
+		@include breakpoint(md) {
+			font-size: 2em;
+			line-height: 1.2em;
+		}
+	}
+	h3{
+		@include breakpoint(md) {
+			font-size: 1.8em;
+			line-height: 1.2em;
+		}
+	}
+	h4{
+		@include breakpoint(md) {
+			font-size: 1.5em;
+			line-height: 1.2em;
+		}
+	}
+	h5{
+		@include breakpoint(md) {
+			font-size: 1.3em;
+			line-height: 1.2em;
+		}
+	}
+	p.body-large{
+		@include breakpoint(md) {
+			font-size: 1.2em;
+			line-height: 1.4em;
+		}
+	}
 
 }
 
 .marketing-header{
-	
+	border-bottom:1px solid $border-color!important;
+	padding:20px 20px;
+	.nav-item{
+		@include breakpoint(md) {
+			border-bottom:1px solid $border-color;
+		}
+	}
+	a.nav-link{
+		color:$text-color!important;
+		font-weight:600;
+		padding:5px 16px!important;
+		&:hover{
+			color:$primary-color!important;
+		}
+		@include breakpoint(md) {
+			padding:16px 0!important;
+			font-size: 20px!important;
+			width:100%;
+  		}
+	}
+	a.nav-link, .btn{
+		font-size:16px;
+	}
+	.sign-up-btn{
+		@include breakpoint(md) {
+			width:100%;
+			margin-top:30px!important;
+		}
+	}
+	.navbar-brand{
+		margin-right:40px;
+		position: relative;
+		top:-7px;
+	}
+	.dropdown-menu{
+		@include breakpoint(md) {
+			box-shadow: none;
+		}
+		.dropdown-item{
+			@include breakpoint(md) {
+				font-size:18px;
+				font-weight: 400;
+				padding:10px 0;
+				&:hover{
+					background:none;
+					color:$primary-color!important;
+				}
+			}
+		}
+	}
+	.form-inline{
+		@include breakpoint(md) {
+			display: block;
+		}
+	}
+
 }
+
+	.accordion-default{
+		.card{
+			background:none;
+			border:none;
+			border-bottom:#D0CDC7 1px solid!important;
+			cursor: pointer;
+			.card-header, .card-body{
+				padding: 1rem 0;
+			}
+			.card-header{
+				border-radius: 0px;
+				border:none;
+				padding-right:60px;
+				background:transparent;
+				position:relative;
+				&.collapsed{
+					&:after{
+						transform: scaleY(-1);
+					}
+				}
+				&:after{
+					content: '';
+					width:32px;
+					height:16px;
+					background-image:url("../images/marketing/chevron.svg");
+					position:absolute;
+					right:0;
+					top: calc(50% - 8px);
+				}
+			}
+		}
+	}
+
+
+
+.house-bg-1{
+	background-image:url("../images/marketing/house-bg-1.png");
+	background-size:cover;
+}
+
+.marketing-footer{
+	padding:$baseline*4 0;
+}
+

@@ -1,26 +1,28 @@
-
-%header
-	.container
-		.row.align-items-center
-			.col-lg-3.col-md-6.col-5
-				%a{:href=>"/"}
-					%img{:src=>"/images/logo.svg", :width=>"120px"}
-			.col-lg-6.d-none.d-lg-block
-				.navbar.justify-content-center
-					.nav
-						.nav-item
-							%a.nav-link{:href=>"/#how-it-works"}
-								How it works
-						.nav-item
-							%a.nav-link{:href=>"/#pricing"}
-								Pricing
-						.nav-item
-							%a.nav-link{:href=>"/market/about"}
-								About us
-			.col-lg-3.col-md-6.col-7
-				.float-right
-					%a.btn.btn-secondary.quarter-margin-right{:href=>"/welcome/login"}
-						Login
-					%a.btn.btn-primary{:href=>"/welcome/sign-up"}
-						Sign up free
-
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.marketing-header
+  .container
+    %a.navbar-brand{:href => "#"}
+      %img{:alt => "", :height => "30", :src => "images/logo.svg", :width => "125"}
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            About
+        %li.nav-item
+          %a.nav-link{:href => "#"} 
+            FAQ
+        %li.nav-item.dropdown
+          %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Made for
+          .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+            %a.dropdown-item{:href => "#"} 
+              Buying agents
+            %a.dropdown-item{:href => "#"} 
+              Selling agents
+      %form.form-inline.my-2.my-lg-0
+        .nav-item
+          %a.nav-link{:href => "/welcome/login"} 
+            Log in
+        %a.btn.btn-secondary.my-2.my-sm-0.sign-up-btn{:href => "/welcome/sign-up"} 
+          Sign up

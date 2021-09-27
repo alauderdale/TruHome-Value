@@ -20,6 +20,11 @@ body.marketing{
 	  &.off-white-bg{
 	  	background:$bg-accent-light-color;
 	  }
+	  &.hero-section{
+	  	@include breakpoint(sm) {
+	  		padding-top:$baseline;
+	  	}
+	  }
 
 	}
 

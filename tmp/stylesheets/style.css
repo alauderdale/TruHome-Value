@@ -1539,6 +1539,9 @@ body.marketing {
       background-color: black; }
     body.marketing section.off-white-bg {
       background: #FCFBF8; }
+    @media (max-width: 768px) {
+      body.marketing section.hero-section {
+        padding-top: 16px; } }
   body.marketing .btn-primary {
     background: #FEBE10 !important;
     border: none;

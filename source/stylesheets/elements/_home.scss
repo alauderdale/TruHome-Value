@@ -189,3 +189,17 @@ body.marketing{
 	border-top:1px solid $border-color;
 }
 
+//stlye updates for listings page
+
+.market .listings-filters{
+	width:60%;
+	@include breakpoint(md) {
+		position:initial;
+		width:100%;
+	}
+}
+
+
+.market .map-container .map-inner .map{
+	position:unset;
+}

@@ -1654,6 +1654,16 @@ body.marketing {
   padding: 64px 0;
   border-top: 1px solid #E6ECF1; }
 
+.market .listings-filters {
+  width: 60%; }
+  @media (max-width: 992px) {
+    .market .listings-filters {
+      position: initial;
+      width: 100%; } }
+
+.market .map-container .map-inner .map {
+  position: unset; }
+
 @keyframes menu-zoom {
   0% {
     opacity: 0;

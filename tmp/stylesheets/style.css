@@ -638,9 +638,12 @@ section {
         opacity: 1; }
     .base-table table th, .base-table table tr {
       border-bottom: 1px solid #E6ECF1; }
+    .base-table table thead {
+      background: #F8FBFF; }
     .base-table table th {
       color: #6F767D;
       background: #F8FBFF;
+      background: transparent;
       border-top: none;
       border-right: 1px solid #E6ECF1;
       text-transform: uppercase;
@@ -661,6 +664,8 @@ section {
     .base-table table td, .base-table table th {
       vertical-align: middle;
       position: relative; }
+    .base-table table.table-hover thead tr:hover {
+      background: transparent; }
     .base-table table.table-hover tr:hover {
       background: #F8FBFF; }
 

@@ -59,9 +59,13 @@
 		th, tr{
 			border-bottom:1px solid $border-color;
 		}
+		thead{
+			background:$off-white-dark-color;
+		}
 		th{
 			color: $light-text-color;
 			background:$off-white-dark-color;
+			background:transparent;
 			border-top:none;
 			border-right:1px solid $border-color;
 			text-transform: uppercase;
@@ -93,6 +97,13 @@
 			position:relative;
 		}
 		&.table-hover{
+			thead{
+				tr{
+					&:hover{
+						background:transparent;
+					}
+				}
+			}
 			tr{
 				&:hover{
 					background:$off-white-dark-color;
